@@ -40,6 +40,41 @@
         color:tomato;
         margin-bottom: 1.6rem;
     }
+
+    &-delete, &-edit{
+        text-decoration: none;
+        color: antiquewhite;
+        font-weight: bold;
+        padding: .8rem 1.6rem;
+    }
+
+    &-delete{
+        background-color: $clr-danger;
+        border: 2px solid $clr-danger;
+
+        &:hover{
+            background-color: $clr-danger-hover;
+            border-color: $clr-danger-hover;
+            color: antiquewhite;
+        }
+    }
+    
+    &-edit{
+        background-color: $clr-success;
+        border: 2px solid $clr-success;
+
+        &:hover{
+            background-color: $clr-success-hover;
+            border-color: $clr-success-hover;
+            color: antiquewhite;
+        }
+    }
+}
+
+.edit{
+    & .mattress{
+        background-color: $clr-green-pale;
+    }
 }
 
 @media screen and (min-width: $md-bp){

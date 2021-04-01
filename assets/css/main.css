@@ -573,6 +573,34 @@ body {
   color: tomato;
   margin-bottom: 1.6rem;
 }
+.mattress-delete, .mattress-edit {
+  text-decoration: none;
+  color: antiquewhite;
+  font-weight: bold;
+  padding: 0.8rem 1.6rem;
+}
+.mattress-delete {
+  background-color: #A63A50;
+  border: 2px solid #A63A50;
+}
+.mattress-delete:hover {
+  background-color: #792d3d;
+  border-color: #792d3d;
+  color: antiquewhite;
+}
+.mattress-edit {
+  background-color: #5AAA95;
+  border: 2px solid #5AAA95;
+}
+.mattress-edit:hover {
+  background-color: #417c6c;
+  border-color: #417c6c;
+  color: antiquewhite;
+}
+
+.edit .mattress {
+  background-color: #b3a890;
+}
 
 @media screen and (min-width: 768px) {
   .mattress {
@@ -603,6 +631,11 @@ body {
 }
 body {
   background-color: cornsilk;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 2.8rem;
 }
 
 /*# sourceMappingURL=main.css.map */

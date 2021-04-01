@@ -1,9 +1,9 @@
 <?php
-class HomeController
+class EditController
 {
     private $model;
 
-    public function __construct(HomeModel $model)
+    public function __construct(EditModel $model)
     {
         $this->model = $model;
     }

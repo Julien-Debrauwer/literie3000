@@ -1,0 +1,7 @@
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+
+# Règles de réécriture d'URL :
+RewriteRule ^home$   ./index.php?page=home
+RewriteRule ^add$   ./index.php?page=add
+RewriteRule ^edit$   ./index.php?page=edit

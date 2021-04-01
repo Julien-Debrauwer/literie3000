@@ -12,6 +12,8 @@ if (isset($_GET["page"]) && !empty($_GET["page"])) {
 
 $data = array(
 	"home" => array("model" => "HomeModel", "view" => "HomeView", "controller" => "HomeController"),
+	"add" => array("model" => "AddModel", "view" => "AddView", "controller" => "AddController"),
+	"edit" => array("model" => "EditModel", "view" => "EditView", "controller" => "EditController"),
 );
 
 $find = false;
@@ -23,7 +25,7 @@ foreach($data as $key => $components){
 		$model = $components["model"];
 		$view = $components["view"];
 		$controller = $components["controller"];
-        
+
 		break;
 	}
 }
