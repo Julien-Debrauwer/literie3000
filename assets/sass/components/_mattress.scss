@@ -1,0 +1,77 @@
+.mattresses{
+    margin-top: 2.8rem;
+}
+.mattress{
+    background-color: $clr-blue-pale;
+    padding: 1.6rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    
+    &:nth-child(odd){
+        background-color: $clr-blue-light;
+    }
+    
+    &-img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    &-title{
+        font-size: 3.2rem;
+        margin-bottom: .8rem;
+    }
+    
+    &-model{
+        font-size: 2.8rem;
+        margin-bottom: 1.6rem;
+    }
+    
+    &-dimension{
+        font-size: 2.4rem;
+        margin: 1.6rem 0;
+    }
+    
+    &-price{
+        font-size: 2rem;
+        text-decoration:line-through;
+    }
+    
+    &-promo{
+        font-size: 2.4rem;
+        color:tomato;
+        margin-bottom: 1.6rem;
+    }
+}
+
+@media screen and (min-width: $md-bp){
+    .mattress{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        
+        
+        &-img{
+            width: 40%;
+            display: flex;
+            align-items: center;
+        }
+        &-infos{
+            width: 50%;
+        }
+    }   
+}
+
+@media screen and (min-width: $lg-bp){
+    .mattress{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        
+        
+        &-img{
+            width: 30%;
+            display: flex;
+            align-items: center;
+        }
+       
+    }   
+}

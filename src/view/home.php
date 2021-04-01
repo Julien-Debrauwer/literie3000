@@ -7,6 +7,7 @@ class HomeView
     }
 
     public function render(){
+        $mattresses = $this->controller->getMattresses();
         require($this->template);
     }
 }
