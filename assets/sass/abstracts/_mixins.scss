@@ -108,14 +108,6 @@
     }
 }
 
-// Each
-$colors : tomato, coral, lightseagreen;
-
-@each $color in $colors {
-    .bg-#{$color}{
-        background-color: $color;
-    }
-}
 
 // Avec une collection
 $text-transform: (

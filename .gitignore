@@ -206,4 +206,5 @@ $RECYCLE.BIN/
 
 /vendor/
 .gitignore
+
 # End of https://www.toptal.com/developers/gitignore/api/sass,macos,windows,git,node
