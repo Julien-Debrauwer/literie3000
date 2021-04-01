@@ -1,0 +1,70 @@
+/*  Commentaire comme en CSS --> visible dans le fichier CSS de sortie   */
+// Commentaire non visible dans le fichier CSS
+
+
+// MAIN.SCSS IMPORT ALL OF THE CSS FILES
+//
+// _______________________________________________________________
+
+
+
+// ABSTRACTS
+// Helper files and tools that configures the project (don't output CSS)
+// _______________________________________________________________
+@import
+  'abstracts/variables',
+  'abstracts/mixins';
+
+
+
+// VENDORS
+// Vendor files, 3rd party, external libraries
+// _______________________________________________________________
+@import
+  'vendors/normalize';
+
+
+
+// BASE
+// Standard code, structure & rules used throughout projects
+// _______________________________________________________________
+@import
+  'base/base',
+  'base/reset',
+  'base/helpers',
+  'base/typography';
+
+
+
+// LAYOUT
+// Grid-system and styles for header, footer, etc.
+// _______________________________________________________________
+@import
+  'layout/layout',
+  'layout/main-section';
+//   'layout/header',
+//   'layout/footer';
+
+
+
+// COMPONENTS
+// Contains all the components / modules of the project
+// _______________________________________________________________
+// @import
+//   'components/';
+
+
+
+// PAGES
+// Specific styles for specific pages
+// _______________________________________________________________
+// @import
+//   'pages/home',
+
+
+
+// THEMES
+// Alternate theme styles
+// _______________________________________________________________
+@import
+  'themes/default';

@@ -1,0 +1,40 @@
+// PROJECT FONTS
+// __________________________________________________________
+
+
+// Import fonts url here (except font face, do it in font.scss)
+// __________________________________________________________
+
+
+
+
+
+// Typographic rules here
+// __________________________________________________________
+
+html { 
+    font-size: 62.5%;
+} 
+
+body { 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 1.5; 
+}
+
+
+
+.title {
+    font-family: 'Pacifico', cursive;
+    margin: 0 0 4rem; 
+    color: $clr-pink;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1.5;
+
+    &--nav-header{
+        margin: 0;
+        font-size: 2.4rem;
+    }
+}
