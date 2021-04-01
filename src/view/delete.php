@@ -7,7 +7,12 @@ class DeleteView
     }
 
     public function render(){
-        $mattresses = $this->controller->getMattresses();
-        require($this->template);
+        if (!empty($_POST)) {
+            $delete = $this->controller->deleteMattress();
+            if($delete){
+                header("Location: edit");
+            }
+            require($this->template);
+        }
     }
 }

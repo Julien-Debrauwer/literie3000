@@ -8,9 +8,10 @@ class DeleteController
         $this->model = $model;
     }
 
-    public function getMattresses()
+    public function deleteMattress()
     {
-        $query = $this->model->db->query("SELECT * FROM mattresses");
+        $query = $this->model->db->query("DELETE FROM mattresses WHERE id = :id");
+        $query->bindParam(":id", $this->model->id);
         $mattresses = $query->fetchAll();
         return $mattresses;
     }

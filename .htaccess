@@ -5,3 +5,4 @@ RewriteEngine on
 RewriteRule ^home$   ./index.php?page=home
 RewriteRule ^add$   ./index.php?page=add
 RewriteRule ^edit$   ./index.php?page=edit
+RewriteRule ^delete$   ./index.php?page=delete

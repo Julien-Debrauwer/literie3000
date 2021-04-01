@@ -16,8 +16,12 @@
                     <p class="mattress-dimension"><?= $mattress["dimensions"] ?></p>
                     <p class="mattress-price"><?= $mattress["price"] ?></p>
                     <p class="mattress-promo"><?= $mattress["price"] ?></p>
-                    <a class="mattress-edit" href="./edit">Editer</a>
-                    <a class="mattress-delete" href="./delete">Supprimer</a>
+                    <form action="delete?id=<?= $mattress["id"] ?>" method="post">
+                        <input class="mattress-delete" type="submit" value="Supprimer">
+                        <input class="delete-hidden" type="hidden" value="<?= $mattress["id"] ?>">
+                    </form>
+                    <!-- <a class="mattress-edit" href="./edit">Editer</a> -->
+                    <!-- <a class="mattress-delete" href="./delete">Supprimer</a> -->
                 </div>
             </li>
         <?php
